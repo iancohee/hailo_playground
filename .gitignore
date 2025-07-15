@@ -1,0 +1,9 @@
+*.key
+*.log
+
+build/
+images/
+models/
+
+gitignore
+.vscode/
