@@ -84,9 +84,9 @@ parseArguments (
 {
     const cv::String keys = "{ h help ?   | | print this message }"
                             "{ m model hef | yolov8n.hef | path of the model to load in HEF format. Only yolov8n.hef has been tested }"
-                            "{ e email    | | email account for SMTP authentication }"
-                            "{ s smtp     | smtp://smtp.gmail.com:587 | SMTP address }"
-                            "{ t to       | | \"MAILTO\" field for email }"
+                            "{ e email    | | email account for SMTP authentication and \"MAIL FROM:\" }"
+                            "{ s smtp     | smtp://smtp.gmail.com:587 | SMTP server address }"
+                            "{ t to       | | \"RCPT:\" field for sending email }"
                             "{ @device    | auto | video device to open. Can be IP address or device path }"
                             ;
     cv::CommandLineParser parser(argc, argv, keys);
